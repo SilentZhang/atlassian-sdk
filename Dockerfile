@@ -7,7 +7,7 @@ ENV SDK_VERSION=6.3.12
 RUN apt-get clean \
     && apt-get update \
     && apt-get install -y wget \
-#    && rm -rf /var/lib/apt/lists/
+    && rm -rf /var/lib/apt/lists/
 
 RUN sh -c 'echo "deb https://packages.atlassian.com/debian/atlassian-sdk-deb/ stable contrib" >>/etc/apt/sources.list' \
     && wget https://packages.atlassian.com/api/gpg/key/public \
