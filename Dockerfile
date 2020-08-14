@@ -2,7 +2,7 @@ FROM openjdk:8-jdk
 
 MAINTAINER zhangchang1979@outlook.com
 
-ENV SDK_VERSION=8.0.16
+ENV SDK_VERSION=8.2.2
 
 RUN apt-get clean \
     && apt-get update \
