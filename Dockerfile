@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM binarybabel/oracle-jdk:8-debian
 
 MAINTAINER zhangchang1979@outlook.com
 
