@@ -4,7 +4,8 @@ MAINTAINER zhangchang1979@outlook.com
 
 ENV SDK_VERSION=6.3.12
 
-RUN apt-get clean \
+RUN rm /var/lib/apt/lists/partial/* -rf \
+    && apt-get clean \
     && apt-get update \
     && apt-get install -y wget
 
